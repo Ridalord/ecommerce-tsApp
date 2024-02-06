@@ -20,7 +20,7 @@ const Product = ({ product, dispatch, REDUCER_ACTIONS, inCart }: PropsType): Rea
     <article className="product">
       <h3>{product.name}</h3>
       <img src={img} alt={product.name} className="product__img" />
-      <p>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'NGN' }).format(product.price)} {itemInCart}</p>
+      <p>{new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN' }).format(product.price)} {itemInCart}</p>
       <button onClick={onAddToCart}>Add to Cart</button>
     </article>
   return content
